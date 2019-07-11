@@ -16,3 +16,12 @@
 form p {
     font-size: .89em;
 }
+
+.form-div.login{
+    margin-top: 100px;
+}
+
+
+.logout{
+    color: red;
+}
