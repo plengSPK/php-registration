@@ -1,6 +1,6 @@
 # php-registration
 
-A register with email verification and login system with bootstrap 4
+Register and login system with bootstrap 4
 
 ## Prerequisites
 #### MySql Server

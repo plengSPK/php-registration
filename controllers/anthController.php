@@ -64,6 +64,8 @@ if (isset($_POST['signup-btn'])) {
             $_SESSION['email'] = $email;
             $_SESSION['verified'] = $verified;
 
+            sendVerificationEmail($email, $token);
+
             // set flash message
             $_SESSION['message'] = "You are now logged in!";
             $_SESSION['alert-class'] = "alert-success";
