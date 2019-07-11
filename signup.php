@@ -22,9 +22,13 @@
                 <form action="signup.php" method="post">
                     <h3 class="text-center">Register</h3>
 
-                    <!-- <div class="alert alert-danger">
-                        <li>Username required</li>
-                    </div> -->
+                    <?php if(count($errors) > 0): ?>
+                        <div class="alert alert-danger">
+                            <?php foreach($errors as $error): ?>
+                                <li><?php echo $error; ?></li>
+                            <?php endforeach; ?>
+                        </div>
+                    <?php endif; ?>
                     
                     <div class="form-group">
                         <label for="username">Username</label>
