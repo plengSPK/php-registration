@@ -1,6 +1,7 @@
 <?php 
 require_once 'controllers/anthController.php'; 
 
+// logout
 if(!isset($_SESSION['id'])){
     header('location: login.php');
     exit();
